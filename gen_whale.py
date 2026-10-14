@@ -128,7 +128,7 @@ def dab(x, y, length, angle, bow=6):
     return f"M{x0:.0f},{y0:.0f}Q{mx:.0f},{my:.0f} {x1:.0f},{y1:.0f}"
 
 
-def dab_layer(rnd, color, opacity, width, count, xr, yr, lo, hi, tilt=6, bow=8):
+def dab_layer(rnd, color, opacity, width, count, xr, yr, lo, hi, tilt=6, bow=8, cap="butt"):
     d = " ".join(
         dab(rnd.uniform(*xr), rnd.uniform(*yr), rnd.uniform(lo, hi),
             rnd.uniform(-tilt, tilt), rnd.uniform(-bow, bow))
@@ -136,7 +136,7 @@ def dab_layer(rnd, color, opacity, width, count, xr, yr, lo, hi, tilt=6, bow=8):
     )
     return (
         f'<path d="{d}" fill="none" stroke="{color}" stroke-opacity="{opacity}" '
-        f'stroke-width="{width}" stroke-linecap="round"/>'
+        f'stroke-width="{width}" stroke-linecap="{cap}"/>'
     )
 
 
@@ -162,16 +162,32 @@ def sparkle(x, y, s, cls, dur, delay, color="#FFFFFF", op=".95"):
 def build_whale(uid):
     rnd = random.Random(2026)
     x0, y0, x1, y1 = G["bbox"]
+    # 厚涂色块：一块块颜料拍上去，方向和形体一致（不再靠渐变糊出来）
+    impasto = []
+    for color, op, w, n, y0, y1 in [
+        ("#0A1730", 0.44, 11, 40, 150, 205),
+        ("#132445", 0.42, 10, 42, 118, 200),
+        ("#1E3A66", 0.38, 9, 40, 100, 180),
+        ("#2A5288", 0.32, 8, 36, 88, 160),
+        ("#3E6FA8", 0.27, 7, 30, 80, 145),
+        ("#6E5AA8", 0.22, 6, 22, 95, 175),
+        ("#9AB6E0", 0.17, 5, 18, 80, 132),
+        ("#0A1230", 0.4, 12, 26, 160, 210),
+    ]:
+        seg = []
+        for _ in range(n):
+            bx, by, bth = bend_pt(rnd.uniform(70, 540), rnd.uniform(y0, y1))
+            seg.append(dab(bx, by, rnd.uniform(26, 86), math.degrees(bth) + rnd.uniform(-10, 10), rnd.uniform(-7, 7)))
+        impasto.append(
+            f'<path d="{" ".join(seg)}" fill="none" stroke="{color}" stroke-opacity="{op}" '
+            f'stroke-width="{w}" stroke-linecap="butt"/>'
+        )
+    impasto = "\n        ".join(impasto)
     inner_glow = "\n        ".join(
         f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="{col}" opacity="{op}" filter="url(#{uid}-blur)"/>'
         for cx, cy, rx, ry, col, op in [
-            (230, 146, 170, 62, "#4A3F8F", 0.5),
-            (330, 132, 130, 52, "#2A4A8C", 0.45),
-            (170, 120, 120, 50, "#1E5F6B", 0.34),
-            (400, 150, 130, 70, "#6E3A63", 0.28),
-            (140, 175, 120, 46, "#3A2E6E", 0.3),
-            (500, 150, 110, 46, "#3A3570", 0.4),
-            (430, 168, 90, 40, "#2A4A8C", 0.34),
+            (230, 146, 150, 52, "#4A3F8F", 0.34),
+            (350, 136, 120, 44, "#2A4A8C", 0.3),
         ]
     )
     def swirl(n):
@@ -200,15 +216,31 @@ def build_whale(uid):
         f'<path d="{d}" fill="none" stroke="#9FD2E4" stroke-opacity=".1" stroke-width="2" stroke-linecap="round"/>'
         for d in G["paths"]["pleats"]
     )
+    # 边缘光拆成一截截短笔，像一笔笔点上去的高光
+    rim_segs, rim_segs2 = [], []
+    pts = G["back_light"]
+    for i in range(len(pts) - 1):
+        (ax, ay), (bx, by) = pts[i], pts[i + 1]
+        ang = math.degrees(math.atan2(by - ay, bx - ax))
+        rim_segs.append(dab((ax + bx) / 2, (ay + by) / 2 - 1, math.hypot(bx - ax, by - ay) * 1.25, ang, rnd.uniform(-2, 2)))
+    fpts = G["fluke_light"]
+    for i in range(len(fpts) - 1):
+        (ax, ay), (bx, by) = fpts[i], fpts[i + 1]
+        ang = math.degrees(math.atan2(by - ay, bx - ax))
+        rim_segs2.append(dab((ax + bx) / 2, (ay + by) / 2 - 1, math.hypot(bx - ax, by - ay) * 1.3, ang, rnd.uniform(-2, 2)))
+    rim = (f'<path d="{" ".join(rim_segs)}" fill="none" stroke="#EAF6FF" stroke-opacity=".8" '
+           f'stroke-width="5.5" stroke-linecap="butt" filter="url(#{uid}-soft)"/>')
+    rim2 = (f'<path d="{" ".join(rim_segs2)}" fill="none" stroke="#D6EEFF" stroke-opacity=".55" '
+            f'stroke-width="4" stroke-linecap="butt" filter="url(#{uid}-soft)"/>')
     eye_x, eye_y = G["eye"]
     return f"""
   <defs>
     <linearGradient id="{uid}-skin" gradientUnits="userSpaceOnUse" x1="{x0 + (x1 - x0) * 0.05:.0f}" y1="{y0:.0f}" x2="{x0 + (x1 - x0) * 0.5:.0f}" y2="{y1:.0f}">
-      <stop offset="0" stop-color="#4E7FC8"/>
+      <stop offset="0" stop-color="#3E72B0"/>
       <stop offset="0.24" stop-color="#22406F"/>
       <stop offset="0.55" stop-color="#132445"/>
       <stop offset="0.82" stop-color="#0B1530"/>
-      <stop offset="1" stop-color="#070C1C"/>
+      <stop offset="1" stop-color="#050A16"/>
     </linearGradient>
     <linearGradient id="{uid}-fin" gradientUnits="userSpaceOnUse" x1="{x0 + 60:.0f}" y1="{y0 + 80:.0f}" x2="{x0 + 230:.0f}" y2="{y1:.0f}">
       <stop offset="0" stop-color="#2C5C96"/>
@@ -226,7 +258,7 @@ def build_whale(uid):
       <feGaussianBlur stdDeviation="3.6"/>
     </filter>
     <filter id="{uid}-brush" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="1.2"/>
+      <feGaussianBlur stdDeviation="0.3"/>
     </filter>
     <filter id="{uid}-paint" x="-10%" y="-10%" width="120%" height="120%">
       <feTurbulence type="fractalNoise" baseFrequency="0.013 0.02" numOctaves="3" seed="7" result="n"/>
@@ -250,11 +282,12 @@ def build_whale(uid):
       <g filter="url(#{uid}-brush)">
         {inner_glow}
       </g>
+      {impasto}
       {inner_stars}
       {big}
       <path d="{G['paths']['fin_light']}" fill="none" stroke="#CFE9FF" stroke-opacity=".22" stroke-width="5" stroke-linecap="round" filter="url(#{uid}-soft)"/>
-      <path d="{G['paths']['back_light']}" fill="none" stroke="#EAF6FF" stroke-opacity=".75" stroke-width="6" stroke-linecap="round" filter="url(#{uid}-soft)"/>
-      <path d="{G['paths']['fluke_light']}" fill="none" stroke="#D6EEFF" stroke-opacity=".5" stroke-width="4.5" stroke-linecap="round" filter="url(#{uid}-soft)"/>
+      {rim}
+      {rim2}
       {pleats}
       <path d="{G['paths']['body']}" fill="none" stroke="#03060F" stroke-opacity=".5" stroke-width="13" filter="url(#{uid}-blur)"/>
       <path d="{G['paths']['fluke']}" fill="none" stroke="#03060F" stroke-opacity=".45" stroke-width="10" filter="url(#{uid}-blur)"/>
@@ -272,6 +305,19 @@ def build_whale(uid):
 # ------------------------------------------------------------- 星空油画场景
 def scene_svg():
     rnd = random.Random(1899)
+    sky_impasto = "\n      ".join(
+        dab_layer(rnd, color, op, w, n, xr, yr, lo, hi, tilt, 10, cap="butt")
+        for color, op, w, n, xr, yr, lo, hi, tilt in [
+            ("#080D22", 0.5, 26, 70, (-40, 1040), (0, 430), 46, 120, 14),
+            ("#0D1330", 0.46, 22, 70, (-40, 1040), (0, 430), 42, 110, 15),
+            ("#151C44", 0.42, 18, 66, (-30, 1030), (0, 430), 38, 100, 16),
+            ("#1E2460", 0.36, 14, 62, (0, 1000), (20, 430), 34, 92, 18),
+            ("#2A2E7C", 0.3, 11, 54, (60, 960), (40, 400), 30, 84, 20),
+            ("#3A3F92", 0.24, 9, 42, (120, 920), (60, 380), 26, 74, 22),
+            ("#4A4AA8", 0.18, 7, 30, (180, 880), (80, 340), 22, 62, 24),
+            ("#6E5AA8", 0.14, 5, 20, (220, 860), (60, 300), 18, 54, 26),
+        ]
+    )
     nebula = "\n      ".join(
         dab_layer(rnd, color, op, w, n, xr, yr, 30, 120, tilt, 14)
         for color, op, w, n, xr, yr, tilt in [
@@ -299,11 +345,9 @@ def scene_svg():
     sparkles = "".join(
         sparkle(x, y, s, f"sp{i}", round(rnd.uniform(3.0, 5.6), 1), -round(rnd.uniform(0, 3.4), 1), c, o)
         for i, (x, y, s, c, o) in enumerate([
-            (150, 96, 13, "#FFFFFF", ".95"), (392, 58, 9, "#DCEAFF", ".9"),
-            (704, 108, 11, "#FFF3D6", ".9"), (884, 220, 8, "#FFFFFF", ".85"),
-            (238, 330, 9, "#CBDCFF", ".8"), (612, 356, 7, "#FFFFFF", ".75"),
-            (86, 250, 7, "#DCEAFF", ".7"), (800, 44, 7, "#FFFFFF", ".8"),
-            (508, 176, 6, "#EAF6FF", ".7"),
+            (150, 96, 10, "#FFFFFF", ".85"), (392, 58, 7, "#DCEAFF", ".8"),
+            (704, 108, 8.5, "#FFF3D6", ".8"), (884, 220, 6, "#FFFFFF", ".7"),
+            (238, 330, 7, "#CBDCFF", ".7"), (800, 44, 5.5, "#FFFFFF", ".7"),
         ])
     )
     clouds = "\n      ".join(
@@ -329,12 +373,12 @@ def scene_svg():
       <stop offset="1" stop-color="#101B44"/>
     </linearGradient>
     <radialGradient id="milky" cx="0.34" cy="0.72" r="0.72">
-      <stop offset="0" stop-color="#7E8FD8" stop-opacity=".22"/>
-      <stop offset="0.45" stop-color="#4A4A9E" stop-opacity=".12"/>
+      <stop offset="0" stop-color="#7E8FD8" stop-opacity=".15"/>
+      <stop offset="0.45" stop-color="#4A4A9E" stop-opacity=".08"/>
       <stop offset="1" stop-color="#0A1330" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="moon">
-      <stop offset="0" stop-color="#EAF4FF" stop-opacity=".5"/>
+      <stop offset="0" stop-color="#EAF4FF" stop-opacity=".36"/>
       <stop offset="0.4" stop-color="#8FA8E8" stop-opacity=".18"/>
       <stop offset="1" stop-color="#2A3A7C" stop-opacity="0"/>
     </radialGradient>
@@ -344,11 +388,11 @@ def scene_svg():
       <stop offset="1" stop-color="#000000" stop-opacity=".85"/>
     </radialGradient>
     <filter id="wobble" x="-6%" y="-6%" width="112%" height="112%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.022" numOctaves="4" seed="5" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.016 0.026" numOctaves="4" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G"/>
     </filter>
     <filter id="slightblur" x="-6%" y="-6%" width="112%" height="112%">
-      <feGaussianBlur stdDeviation="0.7"/>
+      <feGaussianBlur stdDeviation="0.35"/>
     </filter>
     <filter id="softlight" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="24"/>
@@ -369,6 +413,7 @@ def scene_svg():
   <g clip-path="url(#frame)">
     <g filter="url(#slightblur)">
       <g filter="url(#wobble)">
+        {sky_impasto}
         {nebula}
       </g>
     </g>
@@ -393,8 +438,8 @@ def scene_svg():
       {clouds}
     </g>
 
-    <rect x="0" y="0" width="{W}" height="{H}" filter="url(#canvas)" opacity=".04"/>
-    <rect x="0" y="0" width="{W}" height="{H}" filter="url(#grain)" opacity=".07"/>
+    <rect x="0" y="0" width="{W}" height="{H}" filter="url(#canvas)" opacity=".06"/>
+    <rect x="0" y="0" width="{W}" height="{H}" filter="url(#grain)" opacity=".1"/>
     <rect x="0" y="0" width="{W}" height="{H}" fill="url(#vig)"/>
   </g>
   <rect x="0.75" y="0.75" width="{W - 1}.5" height="{H - 1}.5" rx="25.5" fill="none" stroke="#4A5AA0" stroke-opacity=".35" stroke-width="1.5"/>
