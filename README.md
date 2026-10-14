@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/starry-whale.svg?v=4" width="62%" alt="星空油画：鲸鱼的梦（临摹 破晓手绘 N0.111）" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/whale-dream.jpg?v=1" width="100%" alt="《星空·鲸鱼的梦》· 破晓手绘 N0.111（丙烯底色 + 油画细节）" />
   <br />
-  <sub>🐋 <i>星空 · 鲸鱼的梦 —— 游向 MIXXTOPIA</i></sub>
+  <sub>🐋 <i>《星空 · 鲸鱼的梦》· 破晓手绘 N0.111 &nbsp;——&nbsp; 游向 MIXXTOPIA</i></sub>
 </p>
 
 <div align="center">
