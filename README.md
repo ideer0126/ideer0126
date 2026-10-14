@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/starry-whale.svg?v=1" width="100%" alt="星空油画：银河里的蓝色座头鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/starry-whale.svg?v=4" width="62%" alt="星空油画：鲸鱼的梦（临摹 破晓手绘 N0.111）" />
   <br />
-  <sub>🐋 <i>银河里路过的一头鲸，正游向 MIXXTOPIA</i></sub>
+  <sub>🐋 <i>星空 · 鲸鱼的梦 —— 游向 MIXXTOPIA</i></sub>
 </p>
 
 <div align="center">
