@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=03050E,0A1330,1A2050,3A3F7C&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=EAF6FF&fontAlignY=38&animation=fadeIn" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/header-wave.svg?v=1" width="100%" alt="Hi, I'm Xche" />
 </p>
 
 <p align="center">
@@ -85,5 +85,5 @@
 > 💬 **微信**：`Yoona-Xche_love` —— 加我的时候说一声是从这里看到的就好啦～ 🍬
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3A3F7C,1A2050,0A1330,03050E&height=120&section=footer&animation=fadeIn" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/footer-wave.svg?v=1" width="100%" alt="蓝色星空波浪" />
 </p>
