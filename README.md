@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=2" width="100%" alt="莫奈油画风：深色水面上的蓝色座头鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=3" width="100%" alt="莫奈睡莲池上跃出水面的蓝色座头鲸" />
   <br />
-  <sub>🐋 <i>从 AD MARE 出发，一路游向 MIXXTOPIA 的梦</i></sub>
+  <sub>🐋 <i>跃出水面的一瞬间，朝着 MIXXTOPIA 的方向</i></sub>
 </p>
 
 <div align="center">
@@ -65,9 +65,9 @@
 > 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="66" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="46" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="32" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="66" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="46" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="32" alt="蓝鲸" />
 </p>
 
 - 🐋 **来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来
