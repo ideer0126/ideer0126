@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/header-wave.svg?v=1" width="100%" alt="Hi, I'm Xche" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/header-wave.svg?v=2" width="100%" alt="Hi, I'm Xche" />
 </p>
 
 <p align="center">
@@ -65,7 +65,7 @@
 > 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
 
 <p align="center">
-  🐋　🐋　🐋
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/whale-trio.svg?v=1" height="88" alt="三只喷着水柱的小蓝鲸" />
 </p>
 
 - 🐋 **来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来
@@ -85,5 +85,5 @@
 > 💬 **微信**：`Yoona-Xche_love` —— 加我的时候说一声是从这里看到的就好啦～ 🍬
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/footer-wave.svg?v=1" width="100%" alt="蓝色星空波浪" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/footer-wave.svg?v=2" width="100%" alt="蓝色星空波浪" />
 </p>

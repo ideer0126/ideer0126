@@ -40,17 +40,31 @@ def sparkle(x, y, s, cls, dur, delay, color="#FFFFFF", op=".9"):
     )
 
 
-def wave_path(y, amp, phase, bottom, w=1000, crest_only=False):
-    """一条横贯画面的波浪：正弦采样 + 平滑折线（够用且体积小）。"""
+def wave_path(y, amp, phase, bottom, w=1000, crest_only=False, x_lo=-70, x_hi=1055, step=25):
+    """一条横贯画面的波浪：正弦采样 + Catmull-Rom 转三次贝塞尔。
+
+    - 三次贝塞尔保证采样点处切线连续，浪脊是平滑正弦，不会出现扇贝状棱角
+      （旧版用 Q + 控制点固定下移 amp*0.4，上坡下坡一视同仁，每个采样点都是个折角）
+    - x 采样范围左右各留余量，覆盖 drift 动画的 translateX(±26px)
+      （旧版 x 只到 990，右边缘会露出 10~36px 的天空色竖条）
+    """
+    n = math.ceil((x_hi - x_lo) / step)
     pts = []
-    for i in range(0, w + 51, 25):
-        yy = y + amp * math.sin((i / w) * math.pi * 2.2 + phase) - amp * 0.25
-        pts.append((i - 60, yy))
-    d = [f"M{pts[0][0]:.0f},{pts[0][1]:.0f}"]
-    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
-        d.append(f"Q{(x0 + x1) / 2:.0f},{(y0 + y1) / 2 - amp * 0.4:.0f} {x1:.0f},{y1:.0f}")
+    for k in range(n + 1):
+        x = x_lo + k * step
+        pts.append((x, y + amp * math.sin((x / w) * math.pi * 2.2 + phase) - amp * 0.25))
+    d = [f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"]
+    for i in range(len(pts) - 1):
+        p0 = pts[i - 1] if i else pts[i]
+        p1, p2 = pts[i], pts[i + 1]
+        p3 = pts[i + 2] if i + 2 < len(pts) else p2
+        d.append(
+            f"C{p1[0] + (p2[0] - p0[0]) / 6:.1f},{p1[1] + (p2[1] - p0[1]) / 6:.1f} "
+            f"{p2[0] - (p3[0] - p1[0]) / 6:.1f},{p2[1] - (p3[1] - p1[1]) / 6:.1f} "
+            f"{p2[0]:.1f},{p2[1]:.1f}"
+        )
     if not crest_only:
-        d.append(f"L{pts[-1][0]:.0f},{bottom}L{pts[0][0]:.0f},{bottom}Z")
+        d.append(f"L{pts[-1][0]:.1f},{bottom}L{pts[0][0]:.1f},{bottom}Z")
     return " ".join(d)
 
 
@@ -123,7 +137,12 @@ def banner(kind):
   </g>
   <g {flip}>
     <g class="wv3"><path d="{wave_path(H * 0.88, 9, 2.6, H)}" fill="url(#w3)" opacity=".9"/></g>
-    <path d="{wave_path(H * 0.66, 14, 0.0, H, crest_only=True)}" fill="none" stroke="#9FDCF5" stroke-opacity=".4" stroke-width="2.5"/>
+  </g>
+  <g {flip}>
+    <!-- 这条亮线描的是第一层浪的浪脊，所以必须跟 wv1 同一个动画同步漂移；
+         又要压在 wv2 之上，所以单独成组放在最后 -->
+    <g class="wv1"><path d="{wave_path(H * 0.66, 14, 0.0, H, crest_only=True)}" fill="none"
+       stroke="#9FDCF5" stroke-opacity=".4" stroke-width="2.5"/></g>
   </g>
 
   <style>
@@ -134,6 +153,7 @@ def banner(kind):
     .wv1{{animation:drift1 16s ease-in-out infinite}}
     .wv2{{animation:drift2 13s ease-in-out infinite}}
     .wv3{{animation:drift3 10s ease-in-out infinite}}
+    @media (prefers-reduced-motion: reduce){{*{{animation:none !important}}}}
   </style>
 </svg>
 """
