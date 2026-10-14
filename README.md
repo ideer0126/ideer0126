@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B5D8FF,BFE3FF,D6E4FF,DFF6FF&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=42&fontColor=2A5C8A&fontAlignY=38&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7FCBFA,A8DDFF,CDEEFF,EAF9FF&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=0F3D68&fontAlignY=38&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="72" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=1" width="100%" alt="baby blue 梦境里的蓝色鲸鱼" />
   <br />
-  <sub>🐋 <i>从 AD MARE 出发，游向 MIXXTOPIA</i></sub>
+  <sub>🐋 <i>从 AD MARE 出发，一路游向 MIXXTOPIA 的梦</i></sub>
 </p>
 
 <div align="center">
@@ -65,15 +65,14 @@
 > 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
 
 <p align="center">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="64" alt="蓝鲸" />
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="44" alt="蓝鲸" />
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="30" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="66" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="46" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="32" alt="蓝鲸" />
 </p>
 
-- 🐋 **它的来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来，超治愈
-- 🌊 **它的家乡**：MIXXTOPIA —— 一个海和天的边界塌掉了的地方，所以鲸鱼可以游在云里
-- ⛵ **它的航线**：坐上那艘用情绪当燃料的船 MMU，从 AD MARE 一路航行到现在，还没靠岸
-- 💙 **为什么养在这里**：喜欢她们这件事，本来就是一场舍不得结束的远航
+- 🐋 **来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来
+- 🌊 **家乡**：MIXXTOPIA —— 海和天的边界塌掉了，所以鲸鱼可以游在云里
+- 💙 **心愿**：喜欢她们这件事，像一场舍不得结束的航行
 
 ## 📮 找到我
 
@@ -88,5 +87,5 @@
 > 💬 **微信**：`Yoona-Xche_love` —— 加我的时候说一声是从这里看到的就好啦～ 🍬
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=DFF6FF,D6E4FF,BFE3FF,B5D8FF&height=120&section=footer&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=EAF9FF,CDEEFF,A8DDFF,7FCBFA&height=120&section=footer&animation=fadeIn" />
 </p>

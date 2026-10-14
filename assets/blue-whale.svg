@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 56 522 196" width="522" height="196" role="img" aria-label="蓝色鲸鱼">
+  <g class="bob">
+  <defs>
+    <linearGradient id="s-body" x1="0" y1="0" x2="0.12" y2="1">
+      <stop offset="0" stop-color="#63B8FF"/>
+      <stop offset="0.45" stop-color="#2E86E0"/>
+      <stop offset="1" stop-color="#14538F"/>
+    </linearGradient>
+    <linearGradient id="s-fin" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#4C9FE8"/>
+      <stop offset="1" stop-color="#1B5EA8"/>
+    </linearGradient>
+    <radialGradient id="s-aura">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset="0.55" stop-color="#D6EEFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#D6EEFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="s-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="s-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="s-clip"><path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z"/></clipPath>
+  </defs>
+  <ellipse cx="284" cy="156" rx="286" ry="124" fill="url(#s-aura)"/>
+  <ellipse cx="290" cy="292" rx="250" ry="20" fill="#4A90D9" opacity=".16" filter="url(#s-blur)"/>
+  <g>
+    <path d="M 88,174 C 110,202 130,220 152,228 C 174,236 190,228 179,213 C 164,194 148,177 142,161 Z" fill="url(#s-fin)" stroke="#0E3E72" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M 326,112 C 334,92 350,82 366,90 C 360,100 352,110 348,122 Z" fill="url(#s-fin)" stroke="#0E3E72" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z" fill="url(#s-body)"/>
+    <g clip-path="url(#s-clip)">
+      <ellipse cx="240" cy="240" rx="250" ry="78" fill="#DCEFFF" opacity=".55"/>
+      <ellipse cx="130" cy="92" rx="140" ry="30" fill="#BFE6FF" opacity=".45" filter="url(#s-blur)"/>
+      <path d="M 46,158 C 84,176 126,186 168,188" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/><path d="M 72,168 C 108,182 148,190 190,191" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/><path d="M 100,178 C 134,188 170,194 212,194" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120" fill="none" stroke="#EAF9FF" stroke-opacity=".8" stroke-width="3.4" stroke-linecap="round" filter="url(#s-soft)"/>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z" fill="none" stroke="#0E3E72" stroke-opacity=".3" stroke-width="2.2"/>
+    <path d="M 24,150 C 60,160 100,164 138,160" fill="none" stroke="#0E3E72" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="86" cy="124" r="7.5" fill="#0B2A4E"/>
+    <circle cx="83.5" cy="121.5" r="2.6" fill="#F2FBFF" opacity=".95"/>
+    <circle class="tw0" cx="150" cy="78" r="2.4" fill="#E8FAFF" opacity=".9"/><circle class="tw1" cx="206" cy="74" r="3.2" fill="#E8FAFF" opacity=".9"/><circle class="tw2" cx="262" cy="76" r="2.2" fill="#E8FAFF" opacity=".9"/><circle class="tw3" cx="316" cy="84" r="3.0" fill="#E8FAFF" opacity=".9"/><circle class="tw4" cx="362" cy="98" r="2.0" fill="#E8FAFF" opacity=".9"/>
+  </g>
+  <style>
+    .tw0{animation:twk 3.0s ease-in-out -0.0s infinite}.tw1{animation:twk 3.8s ease-in-out -0.4s infinite}.tw2{animation:twk 4.6s ease-in-out -0.8s infinite}.tw3{animation:twk 3.0s ease-in-out -1.2s infinite}.tw4{animation:twk 3.8s ease-in-out -1.6s infinite}
+    @keyframes twk{0%,100%{opacity:.4}50%{opacity:1}}
+  </style></g>
+  <style>
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .bob{animation:bob 7s ease-in-out infinite}
+    @keyframes twk{0%,100%{opacity:.35}50%{opacity:1}}
+  </style>
+</svg>

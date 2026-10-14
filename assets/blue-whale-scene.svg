@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="baby blue 梦境里的蓝色鲸鱼">
+  <defs>
+    <linearGradient id="dream" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#F6FCFF"/>
+      <stop offset="0.38" stop-color="#DEEFFF"/>
+      <stop offset="0.76" stop-color="#C2E3FC"/>
+      <stop offset="1" stop-color="#A2D2F5"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="kblur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="340" rx="26" fill="url(#dream)"/>
+
+  <g class="beams">
+    <path d="M 250,0 L 430,0 L 300,340 L 130,340 Z" fill="url(#beam)" opacity=".5"/>
+    <path d="M 610,0 L 730,0 L 700,340 L 560,340 Z" fill="url(#beam)" opacity=".38"/>
+  </g>
+
+  <circle class="k0" cx="559.5" cy="191.4" r="62.1" fill="#FFFFFF" opacity="0.25" filter="url(#kblur)"/><style>.k0{animation:float 11.8s ease-in-out -4.3s infinite}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,-11.0px)}}</style><circle class="k1" cx="199.0" cy="201.5" r="45.9" fill="#FFFFFF" opacity="0.25" filter="url(#kblur)"/><style>.k1{animation:float 12.2s ease-in-out -3.2s infinite}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,8.5px)}}</style><circle class="k2" cx="406.8" cy="157.6" r="77.2" fill="#FFFFFF" opacity="0.23" filter="url(#kblur)"/><style>.k2{animation:float 12.1s ease-in-out -0.0s infinite}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,4.1px)}}</style><circle class="k3" cx="337.5" cy="106.8" r="69.8" fill="#FFFFFF" opacity="0.22" filter="url(#kblur)"/><style>.k3{animation:float 10.5s ease-in-out -3.8s infinite}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,-8.0px)}}</style>
+
+  <path d="M 0,30 C 150,14 300,46 450,30 C 600,14 750,46 900,30 C 950,25 980,30 1000,28" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="2.6" class="line"/>
+
+  <path class="sp0" d="M 180,85 Q 181.54,90.46 187,92 Q 181.54,93.54 180,99 Q 178.46,93.54 173,92 Q 178.46,90.46 180,85 Z" fill="#FFFFFF"/><style>.sp0{animation:twk 4.1s ease-in-out -2.2s infinite}</style><path class="sp1" d="M 300,247 Q 301.1,250.9 305,252 Q 301.1,253.1 300,257 Q 298.9,253.1 295,252 Q 298.9,250.9 300,247 Z" fill="#FFFFFF"/><style>.sp1{animation:twk 3.3s ease-in-out -2.6s infinite}</style><path class="sp2" d="M 470,68 Q 471.32,72.68 476,74 Q 471.32,75.32 470,80 Q 468.68,75.32 464,74 Q 468.68,72.68 470,68 Z" fill="#FFFFFF"/><style>.sp2{animation:twk 4.7s ease-in-out -1.9s infinite}</style><path class="sp3" d="M 640,106.5 Q 641.21,110.79 645.5,112 Q 641.21,113.21 640,117.5 Q 638.79,113.21 634.5,112 Q 638.79,110.79 640,106.5 Z" fill="#FFFFFF"/><style>.sp3{animation:twk 3.6s ease-in-out -1.9s infinite}</style><path class="sp4" d="M 792,219.5 Q 793.43,224.57 798.5,226 Q 793.43,227.43 792,232.5 Q 790.57,227.43 785.5,226 Q 790.57,224.57 792,219.5 Z" fill="#FFFFFF"/><style>.sp4{animation:twk 3.2s ease-in-out -1.7s infinite}</style><path class="sp5" d="M 868,91 Q 869.1,94.9 873,96 Q 869.1,97.1 868,101 Q 866.9,97.1 863,96 Q 866.9,94.9 868,91 Z" fill="#FFFFFF"/><style>.sp5{animation:twk 4.0s ease-in-out -2.8s infinite}</style><path class="sp6" d="M 120,232.5 Q 121.21,236.79 125.5,238 Q 121.21,239.21 120,243.5 Q 118.79,239.21 114.5,238 Q 118.79,236.79 120,232.5 Z" fill="#FFFFFF"/><style>.sp6{animation:twk 3.4s ease-in-out -1.5s infinite}</style><path class="sp7" d="M 560,287.5 Q 560.99,291.01 564.5,292 Q 560.99,292.99 560,296.5 Q 559.01,292.99 555.5,292 Q 559.01,291.01 560,287.5 Z" fill="#FFFFFF"/><style>.sp7{animation:twk 4.5s ease-in-out -2.9s infinite}</style>
+
+  <g transform="translate(186,6) scale(1.15)">
+    <g class="bob">
+  <defs>
+    <linearGradient id="w-body" x1="0" y1="0" x2="0.12" y2="1">
+      <stop offset="0" stop-color="#63B8FF"/>
+      <stop offset="0.45" stop-color="#2E86E0"/>
+      <stop offset="1" stop-color="#14538F"/>
+    </linearGradient>
+    <linearGradient id="w-fin" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#4C9FE8"/>
+      <stop offset="1" stop-color="#1B5EA8"/>
+    </linearGradient>
+    <radialGradient id="w-aura">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset="0.55" stop-color="#D6EEFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#D6EEFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="w-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="w-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="w-clip"><path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z"/></clipPath>
+  </defs>
+  <ellipse cx="284" cy="156" rx="286" ry="124" fill="url(#w-aura)"/>
+  <ellipse cx="290" cy="292" rx="250" ry="20" fill="#4A90D9" opacity=".16" filter="url(#w-blur)"/>
+  <g>
+    <path d="M 88,174 C 110,202 130,220 152,228 C 174,236 190,228 179,213 C 164,194 148,177 142,161 Z" fill="url(#w-fin)" stroke="#0E3E72" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M 326,112 C 334,92 350,82 366,90 C 360,100 352,110 348,122 Z" fill="url(#w-fin)" stroke="#0E3E72" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z" fill="url(#w-body)"/>
+    <g clip-path="url(#w-clip)">
+      <ellipse cx="240" cy="240" rx="250" ry="78" fill="#DCEFFF" opacity=".55"/>
+      <ellipse cx="130" cy="92" rx="140" ry="30" fill="#BFE6FF" opacity=".45" filter="url(#w-blur)"/>
+      <path d="M 46,158 C 84,176 126,186 168,188" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/><path d="M 72,168 C 108,182 148,190 190,191" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/><path d="M 100,178 C 134,188 170,194 212,194" fill="none" stroke="#F0F9FF" stroke-opacity=".45" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120" fill="none" stroke="#EAF9FF" stroke-opacity=".8" stroke-width="3.4" stroke-linecap="round" filter="url(#w-soft)"/>
+    <path d="M 20,143 C 20,117 31,101 53,93 C 86,80 124,74 172,74 C 242,74 322,90 374,110 C 386,115 394,118 400,120 C 424,104 450,82 478,70 C 500,60 513,65 508,82 C 504,96 494,103 486,107 C 471,117 459,127 451,134 C 468,143 483,157 495,172 C 507,187 501,203 486,198 C 474,193 466,184 458,175 C 441,165 419,155 400,147 C 458,183 428,158 400,147 C 392,145 386,145 380,147 C 320,172 244,190 182,190 C 122,190 60,178 34,165 C 24,159 20,151 20,143 Z" fill="none" stroke="#0E3E72" stroke-opacity=".3" stroke-width="2.2"/>
+    <path d="M 24,150 C 60,160 100,164 138,160" fill="none" stroke="#0E3E72" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="86" cy="124" r="7.5" fill="#0B2A4E"/>
+    <circle cx="83.5" cy="121.5" r="2.6" fill="#F2FBFF" opacity=".95"/>
+    <circle class="tw0" cx="150" cy="78" r="2.4" fill="#E8FAFF" opacity=".9"/><circle class="tw1" cx="206" cy="74" r="3.2" fill="#E8FAFF" opacity=".9"/><circle class="tw2" cx="262" cy="76" r="2.2" fill="#E8FAFF" opacity=".9"/><circle class="tw3" cx="316" cy="84" r="3.0" fill="#E8FAFF" opacity=".9"/><circle class="tw4" cx="362" cy="98" r="2.0" fill="#E8FAFF" opacity=".9"/>
+  </g>
+  <style>
+    .tw0{animation:twk 3.0s ease-in-out -0.0s infinite}.tw1{animation:twk 3.8s ease-in-out -0.4s infinite}.tw2{animation:twk 4.6s ease-in-out -0.8s infinite}.tw3{animation:twk 3.0s ease-in-out -1.2s infinite}.tw4{animation:twk 3.8s ease-in-out -1.6s infinite}
+    @keyframes twk{0%,100%{opacity:.4}50%{opacity:1}}
+  </style></g>
+  </g>
+
+  <circle class="bb0" cx="502.2" cy="292" r="4.7" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="1.8"/><style>.bb0{animation:rise 15.1s linear -9.5s infinite}@keyframes rise{0%{transform:translate(0,0);opacity:0}15%{opacity:.85}100%{transform:translate(10px,-218px);opacity:0}}</style><circle class="bb1" cx="596.7" cy="292" r="4.6" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="1.8"/><style>.bb1{animation:rise 16.3s linear -5.9s infinite}@keyframes rise{0%{transform:translate(0,0);opacity:0}15%{opacity:.85}100%{transform:translate(10px,-218px);opacity:0}}</style><circle class="bb2" cx="599.2" cy="292" r="5.0" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="1.8"/><style>.bb2{animation:rise 13.0s linear -2.2s infinite}@keyframes rise{0%{transform:translate(0,0);opacity:0}15%{opacity:.85}100%{transform:translate(10px,-218px);opacity:0}}</style><circle class="bb3" cx="681.8" cy="292" r="3.6" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="1.8"/><style>.bb3{animation:rise 15.5s linear -9.3s infinite}@keyframes rise{0%{transform:translate(0,0);opacity:0}15%{opacity:.85}100%{transform:translate(10px,-218px);opacity:0}}</style>
+
+  <style>
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    .bob{animation:bob 8s ease-in-out infinite}
+    @keyframes twk{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes sway{0%,100%{transform:translateX(0)}50%{transform:translateX(20px)}}
+    .line{animation:sway 18s ease-in-out infinite}
+    @keyframes beams{0%,100%{opacity:.65}50%{opacity:1}}
+    .beams{animation:beams 14s ease-in-out infinite}
+  </style>
+</svg>
