@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7FCBFA,A8DDFF,CDEEFF,EAF9FF&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=0F3D68&fontAlignY=38&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=071C31,0C2E49,16456B,2A6E97&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=EAF7FF&fontAlignY=38&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=1" width="100%" alt="baby blue 梦境里的蓝色鲸鱼" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=2" width="100%" alt="莫奈油画风：深色水面上的蓝色座头鲸" />
   <br />
   <sub>🐋 <i>从 AD MARE 出发，一路游向 MIXXTOPIA 的梦</i></sub>
 </p>
@@ -65,9 +65,9 @@
 > 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="66" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="46" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=1" width="32" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="66" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="46" alt="蓝鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=2" width="32" alt="蓝鲸" />
 </p>
 
 - 🐋 **来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来
@@ -87,5 +87,5 @@
 > 💬 **微信**：`Yoona-Xche_love` —— 加我的时候说一声是从这里看到的就好啦～ 🍬
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=EAF9FF,CDEEFF,A8DDFF,7FCBFA&height=120&section=footer&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2A6E97,16456B,0C2E49,071C31&height=120&section=footer&animation=fadeIn" />
 </p>
