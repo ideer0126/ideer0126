@@ -2,11 +2,18 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B5D8FF,BFE3FF,D6E4FF,DFF6FF&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=42&fontColor=2A5C8A&fontAlignY=38&animation=fadeIn" />
 </p>
 
+<p align="center">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="72" alt="蓝鲸" />
+  <br />
+  <sub>🐋 <i>从 AD MARE 出发，游向 MIXXTOPIA</i></sub>
+</p>
+
 <div align="center">
   <img src="https://img.shields.io/badge/🎓_学生-D6E4FF?style=flat-square" alt="学生" />
   <img src="https://img.shields.io/badge/🍭_快乐写代码-DFF6FF?style=flat-square" alt="快乐写代码" />
   <img src="https://img.shields.io/badge/🧸_永远好奇-BFE3FF?style=flat-square" alt="永远好奇" />
   <img src="https://img.shields.io/badge/⭐_追星中-C7E3FF?style=flat-square" alt="追星中" />
+  <img src="https://img.shields.io/badge/🐋_NMIXX_NSWER-DFF6FF?style=flat-square" alt="NMIXX NSWER" />
 </div>
 
 ## 🐰 关于我
@@ -51,6 +58,22 @@
 - ⭐ **本命（最喜欢）**：NMIXX 的雪允
 - 🐱 **NewJeans**：姜海粼 Haerin
 - 🎤 **华语**：周杰伦
+
+## 🐋 蓝鲸出没
+
+> 「저 하늘 위를 surfing，이 바닷속을 flying」
+> 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
+
+<p align="center">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="64" alt="蓝鲸" />
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="44" alt="蓝鲸" />
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f433/512.gif" width="30" alt="蓝鲸" />
+</p>
+
+- 🐋 **它的来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来，超治愈
+- 🌊 **它的家乡**：MIXXTOPIA —— 一个海和天的边界塌掉了的地方，所以鲸鱼可以游在云里
+- ⛵ **它的航线**：坐上那艘用情绪当燃料的船 MMU，从 AD MARE 一路航行到现在，还没靠岸
+- 💙 **为什么养在这里**：喜欢她们这件事，本来就是一场舍不得结束的远航
 
 ## 📮 找到我
 
