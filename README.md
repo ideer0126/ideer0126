@@ -58,6 +58,7 @@
   <a href="https://github.com/ideer0126"><img src="https://img.shields.io/badge/GitHub-EAF2FF?style=flat-square&logo=github&logoColor=2A5C8A" alt="GitHub" /></a>
   <a href="mailto:703572351@qq.com"><img src="https://img.shields.io/badge/Email-D6E4FF?style=flat-square&logo=tencentqq&logoColor=12B7F5" alt="Email" /></a>
   <a href="https://www.instagram.com/xche_0126"><img src="https://img.shields.io/badge/Instagram-E1F0FF?style=flat-square&logo=instagram&logoColor=E4405F" alt="Instagram" /></a>
+  <a href="https://x.com/sdc1850654"><img src="https://img.shields.io/badge/Twitter-@sdc1850654-DFF6FF?style=flat-square&logo=x&logoColor=000000" alt="Twitter：@sdc1850654" /></a>
   <img src="https://img.shields.io/badge/微信-Yoona--Xche__love-D6E4FF?style=flat-square&logo=wechat&logoColor=07C160" alt="微信：Yoona-Xche_love" />
 </p>
 
