@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=071C31,0C2E49,16456B,2A6E97&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=EAF7FF&fontAlignY=38&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=03050E,0A1330,1A2050,3A3F7C&height=200&section=header&text=Hi%2C%20I%27m%20Xche%20%F0%9F%91%8B&fontSize=44&fontColor=EAF6FF&fontAlignY=38&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale-scene.svg?v=3" width="100%" alt="莫奈睡莲池上跃出水面的蓝色座头鲸" />
+  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/starry-whale.svg?v=1" width="100%" alt="星空油画：银河里的蓝色座头鲸" />
   <br />
-  <sub>🐋 <i>跃出水面的一瞬间，朝着 MIXXTOPIA 的方向</i></sub>
+  <sub>🐋 <i>银河里路过的一头鲸，正游向 MIXXTOPIA</i></sub>
 </p>
 
 <div align="center">
@@ -65,9 +65,7 @@
 > 在天空上冲浪，在大海里飞翔 🌀 ——《DICE》
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="66" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="46" alt="蓝鲸" />
-  <img src="https://raw.githubusercontent.com/ideer0126/ideer0126/main/assets/blue-whale.svg?v=3" width="32" alt="蓝鲸" />
+  🐋　🐋　🐋
 </p>
 
 - 🐋 **来历**：NMIXX 官方应援棒上的那头小蓝鲸，一按就喷着水柱亮起来
@@ -87,5 +85,5 @@
 > 💬 **微信**：`Yoona-Xche_love` —— 加我的时候说一声是从这里看到的就好啦～ 🍬
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2A6E97,16456B,0C2E49,071C31&height=120&section=footer&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=3A3F7C,1A2050,0A1330,03050E&height=120&section=footer&animation=fadeIn" />
 </p>
